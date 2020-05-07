@@ -1,0 +1,104 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    background-color: rgb(245, 245, 245);
+    color: #333333;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin-top: 1rem;
+    justify-content: space-between;
+    //align-self: center;
+    display: flex;
+    flex-direction: row;
+    min-width: 90%;
+    align-items: center;
+        h4 {
+            font-size: 33px;
+        }
+        h5 {
+            font-weight: 300;
+            margin-top: -2.5rem;
+        }
+}
+
+
+
+.game-container {
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    .output {
+        text-align: center;
+        font-weight: 300;
+        font-size: 23px;
+        transition: 1s ease-in-out;
+    }
+    .output-main {
+        font-weight: 500;
+        font-size: 26px;
+        padding-bottom: 1.5rem;
+    }
+    .output-computer {
+        margin-top: -0.5rem;
+    }
+    .weapon {
+        display: flex;
+        flex-direction: row;
+        .main-btn {
+            margin: 15px;
+            border: none;
+            border-radius: 3px;
+            min-width: 7rem;
+            min-height: 3rem;
+            font-size: 20px;
+            transition: 0.5s;
+        }
+        .main-btn:hover {
+            box-shadow: 2px 2px 5px rgb(0, 0, 0);
+
+        }
+        .rock {
+            background-color: rgb(223, 132, 132);
+        }
+        .paper {
+            background-color: rgb(146, 192, 218);
+        }
+        .scissors {
+            background-color: rgb(241, 211, 140);
+        }
+    }
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 60%;
+    .score-player {
+        color: rgb(146, 192, 218);
+    }
+    .score-computer {
+        color: rgb(221, 122, 122);
+    }
+
+    .score-element {
+        font-weight: 400;
+        font-size: 35px;
+        //color: rgb(138, 138, 138);
+        margin-top: 5rem;
+        text-transform: uppercase;
+    }
+}
+
+.call-to-action {
+    font-size: 25px;
+    margin-top: 2rem;
+    font-weight: 300;
+}
