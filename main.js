@@ -99,7 +99,6 @@
           }
           user.setOutput()
           ai.setOutput()
-          console.log(`User: ${user.weapon}, AI: ${ai.weapon}`)
           output.textContent = checkWinner()
      }
 
@@ -138,7 +137,6 @@
 
      function addRound() {
           round += 1
-          console.log(`Round: ${round}`)
      }
 
      function checkRound() {
